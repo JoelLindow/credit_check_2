@@ -8,5 +8,5 @@ Some of the code is slightly bulky, but you will also notice an effort to allevi
 
 I enjoyed the chance to revisit this exercise one more time and really lock in some concepts by approaching the input date from a totally different angle.
 
-Sofwtare Developer,
+Software Developer,
  Joel Lindow
