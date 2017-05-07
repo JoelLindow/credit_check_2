@@ -16,7 +16,6 @@ class CreditCheckTest < Minitest::Test
     cc = CreditCheck.new(credit_card_number)
     split_card = [5, 5, 4, 1, 8, 0, 8, 9, 2, 3, 7, 9, 5, 2, 4, 0]
     assert_equal split_card, cc.split_card_number
-      # binding.pry
   end
 
   def test_if_every_other_number_doubled
