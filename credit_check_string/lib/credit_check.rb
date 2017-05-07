@@ -4,7 +4,6 @@ attr_reader :card
 
   def initialize(card)
     @card = card
-
   end
 
   def split_card_number
@@ -39,5 +38,30 @@ attr_reader :card
     split_string.inject(:+).to_s
   end
 
-  
+  def sum_of_final_collection
+    sum_stage = []
+    split_card_with_reductions.each do |num|
+      sum_stage << num.to_i
+    end
+    sum_stage.inject(:+)
+  end
+
+  def validate
+    if sum_of_final_collection % 10 == 0
+      true
+    else
+      false
+    end
+  end
+
+  def validation_message_output
+    if validate == true
+      "Card Number #{card} is a Valid Credit Card Number"
+    else
+      "Card Number #{card} is not a Valid Card Number. Call the Cops!"
+    end
+  end
+
+
+
 end
